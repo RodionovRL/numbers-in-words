@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98f31b78-f309-40f6-a7cc-ea4a6f79e9b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NumbersInWords.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConsoleReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Modifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintInConsole.java" afterDir="false" />
+    <list default="true" id="98f31b78-f309-40f6-a7cc-ea4a6f79e9b1" name="Changes" comment="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия">
+      <change afterPath="$PROJECT_DIR$/src/Digit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OutConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrintInConsole.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,6 +31,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2LMfr3HZxsdPRVxTThxsg7aV7xM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/rodionovrl/java/otus/projects/java-basic-22-09/Java-Basic-22-09-svc",
+    "last_opened_file_path": "/home/rodionovrl/java/pet/wonderfulAlisa/wonderfulAlisaBot",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -69,8 +70,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675686072979</updated>
-      <workItem from="1675686075757" duration="7667000" />
+      <workItem from="1675686075757" duration="28811000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия">
+      <created>1675757413995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675757413995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,5 +95,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
