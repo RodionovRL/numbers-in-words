@@ -3,9 +3,9 @@ import numbers.FullNumber;
 import numbers.ThreeDigitsNumber;
 import utils.Categories;
 
-public class Parser {
+public class Parser implements ParserImpl {
 
-
+    @Override
     public FullNumber parseInput(Integer input) {
 
         FullNumber resultThreeDigitsNumber = new FullNumber();
@@ -32,7 +32,8 @@ public class Parser {
         return resultThreeDigitsNumber;
     }
 
-    private ThreeDigitsNumber parseThreeDigits(String threeDigits) {
+    @Override
+    public ThreeDigitsNumber parseThreeDigits(String threeDigits) {
         ThreeDigitsNumber resultThreeDigitsNumber = new ThreeDigitsNumber();
 
         for (int i = 0; i < threeDigits.length(); i++) {

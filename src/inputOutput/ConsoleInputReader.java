@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ConsoleInputReader implements InputReader {
     final Scanner scanner;
 
-    public ConsoleInputReader(Scanner scanner) {
-        this.scanner = scanner;
+    public ConsoleInputReader() {
+        this.scanner = new Scanner(System.in);
     }
 
 

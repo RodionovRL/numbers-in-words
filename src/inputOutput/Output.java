@@ -1,7 +1,15 @@
 package inputOutput;
 
+import java.io.PrintStream;
+
 public class Output implements OutConsole {
+    private final PrintStream out;
+
+    public Output() {
+        this.out = System.out;
+    }
+
     public void print(String message){
-        System.out.println(message);
+        out.println(message);
     }
 }

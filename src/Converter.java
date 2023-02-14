@@ -3,7 +3,8 @@ import numbers.ThreeDigitsNumber;
 import utils.Categories;
 import utils.Utils;
 
-public class Converter {
+public class Converter implements ConverterImpl {
+    @Override
     public String convertThreeDigitsInWords(ThreeDigitsNumber threeDigitsNumber) {
         StringBuilder resultInWords = new StringBuilder();
 
@@ -17,6 +18,7 @@ public class Converter {
         return resultInWords.toString();
     }
 
+    @Override
     public String convertFullNumberInWords(FullNumber fullNumber) {
         StringBuilder fullNumberInWords = new StringBuilder();
         if (fullNumber.getBillions() != null) {

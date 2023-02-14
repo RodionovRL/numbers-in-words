@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98f31b78-f309-40f6-a7cc-ea4a6f79e9b1" name="Changes" comment="feat: добавить реализацию вывода числа прописью">
-      <change afterPath="$PROJECT_DIR$/src/numbers/FullNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/numbers/ThreeDigitsNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Categories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ApplicationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConvertManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ParserImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NumbersInWords.iml" beforeDir="false" afterPath="$PROJECT_DIR$/numbersInWords.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/ConsoleInputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Digit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numbers/Digit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/InputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Converter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OutConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/OutConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/Output.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputOutput/ConsoleInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/ConsoleInputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputOutput/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/Output.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -44,6 +37,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="RodionovRL" />
+        <option name="repository" value="numbers-in-words" />
+      </RepoCoordinatesHolder>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,6 +72,11 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="NumbersInWords" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -102,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675686072979</updated>
       <workItem from="1675686075757" duration="42782000" />
-      <workItem from="1676192833509" duration="25544000" />
+      <workItem from="1676192833509" duration="31554000" />
     </task>
     <task id="LOCAL-00001" summary="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия">
       <created>1675757413995</created>
@@ -118,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675966731988</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: добавить реализацию вывода числа прописью">
+      <created>1676379119730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676379119730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
