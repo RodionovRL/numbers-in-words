@@ -1,26 +1,12 @@
+package numbers;
+
 public class Digit {
     private int position;
     private int value;
-    private String inWords;
-
-    public String getInWords() {
-        return inWords;
-    }
-
-    public void setInWords(String inWords) {
-        this.inWords = inWords;
-    }
 
     public Digit() {
-    }
-
-    public Digit(int position, int value) {
-        this.position = position;
-        this.value = value;
-    }
-
-    public int getPosition() {
-        return position;
+        position = 0;
+        value = 0;
     }
 
     public void setPosition(int position) {
@@ -37,7 +23,7 @@ public class Digit {
 
     @Override
     public String toString() {
-        return "Digit{" +
+        return "Numbers.Digit{" +
                 "position=" + position +
                 ", value=" + value +
                 '}';

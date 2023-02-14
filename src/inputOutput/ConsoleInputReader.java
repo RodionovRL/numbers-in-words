@@ -1,7 +1,9 @@
+package inputOutput;
+
 import java.util.Scanner;
 
 public class ConsoleInputReader implements InputReader {
-    Scanner scanner;
+    final Scanner scanner;
 
     public ConsoleInputReader(Scanner scanner) {
         this.scanner = scanner;
@@ -9,7 +11,7 @@ public class ConsoleInputReader implements InputReader {
 
 
     public int scanUserInput() {
-        int inputUserAnswer = -10;
+        int inputUserAnswer = 0;
         if (scanner.hasNextInt()) {
             inputUserAnswer = scanner.nextInt();
         } else {

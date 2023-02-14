@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package inputOutput;
 
 public interface InputReader {
     int scanUserInput();

@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="98f31b78-f309-40f6-a7cc-ea4a6f79e9b1" name="Changes" comment="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия">
-      <change afterPath="$PROJECT_DIR$/src/Digit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OutConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
+    <list default="true" id="98f31b78-f309-40f6-a7cc-ea4a6f79e9b1" name="Changes" comment="feat: добавить реализацию вывода числа прописью">
+      <change afterPath="$PROJECT_DIR$/src/numbers/FullNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/numbers/ThreeDigitsNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumbersInWords.iml" beforeDir="false" afterPath="$PROJECT_DIR$/numbersInWords.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleInputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/ConsoleInputReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Digit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numbers/Digit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/InputReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrintInConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Number.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OutConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/OutConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputOutput/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +33,16 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,18 +61,33 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/rodionovrl/java/pet/wonderfulAlisa/wonderfulAlisaBot",
+    "last_opened_file_path": "/home/rodionovrl/java/otus/projects/java-basic-22-09/java-basic-22-09-final/NumbersInWords",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="NumbersInWords" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="NumbersInWords" />
+      <module name="numbersInWords" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="numbersInWords" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="numbersInWords" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -70,7 +101,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675686072979</updated>
-      <workItem from="1675686075757" duration="28811000" />
+      <workItem from="1675686075757" duration="42782000" />
+      <workItem from="1676192833509" duration="25544000" />
     </task>
     <task id="LOCAL-00001" summary="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия">
       <created>1675757413995</created>
@@ -79,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675757413995</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: добавить реализацию вывода числа прописью&#10;&#10;коммит сделан на консультации">
+      <created>1675966731988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675966731988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,17 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: выполнить основной функционал&#10;&#10;  созданы классы вывода в консоль, считывания из консоли, созданы интерфейсы взаимодействия" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: добавить реализацию вывода числа прописью&#10;&#10;коммит сделан на консультации" />
+    <MESSAGE value="feat: добавить реализацию вывода числа прописью" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавить реализацию вывода числа прописью" />
   </component>
 </project>

@@ -1,3 +1,11 @@
+import inputOutput.ConsoleInputReader;
+import inputOutput.InputReader;
+import inputOutput.OutConsole;
+import inputOutput.Output;
+import numbers.Digit;
+import numbers.FullNumber;
+import utils.Utils;
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,18 +15,22 @@ public class Main {
 
         Parser parser = new Parser();
         InputReader input = new ConsoleInputReader(scanner);
-        Utils utils = new Utils();
-        Modifier modifier = new Modifier(input, parser);
+        Converter converter = new Converter();
 
         output.print("Введите целое число рублей");
         int userNumber = input.scanUserInput();
-        output.print(userNumber + " " + utils.rightCurrencyName(parser.lastDigitParse(userNumber)));
-//        Digit digit =new Digit();
-//        digit.setPosition(1);
-//        digit.setValue(2);
-//        System.out.println(digit.getInWords());
-//        System.out.println(modifier.digitInWords(parser.parseInput(userNumber)));
+        FullNumber parsedFullNumber = parser.parseInput(userNumber);
+        output.print(userNumber + " " + Utils.rightCurrencyName(parsedFullNumber.getOnes()));
+
+        Digit digit;
+        digit = new Digit();
+        digit.setPosition(1);
+        digit.setValue(2);
+
+        System.out.println(converter.convertFullNumberInWords(parsedFullNumber));
 
 
     }
+
+
 }
