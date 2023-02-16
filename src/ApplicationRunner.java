@@ -1,19 +1,33 @@
+import inputOutput.ConsoleInputReader;
 import inputOutput.InputReader;
 import inputOutput.OutConsole;
+import inputOutput.Output;
+import utils.RussianNumbersName;
+import utils.TextNumbersName;
 
 public class ApplicationRunner {
-    private final InputReader inputReader;
-    private final OutConsole outConsole;
-    private final ConvertManager convertManager;
+    InputReader inputReader = new ConsoleInputReader();
+    OutConsole outConsole = new Output();
+    Parser parser = new ParserImpl();
+    TextNumbersName numbersName = new RussianNumbersName();
+    Converter converter = new ConverterImpl(numbersName);
+    ConvertManager convertManager = new ConvertManagerImpl(parser, converter, numbersName);
 
-    public ApplicationRunner(InputReader inputReader, OutConsole outConsole, ConvertManager convertManager) {
-        this.inputReader = inputReader;
-        this.outConsole = outConsole;
-        this.convertManager = convertManager;
+
+    public void run() {
+        int userInput = showPromptAndReadInput();
+        outConsole.print(convertManager.addCurrencyToNumber(userInput));
+        outConsole.print(convertManager.convertNumberToWords(userInput));
     }
 
-    public void run(){
-
-
+    private int showPromptAndReadInput() {
+        outConsole.print("Введите сумму от 1 до 2 147 483 647 (без пробелов)");
+        int userInput = inputReader.scanUserInput();
+        if (userInput < 1) {
+            outConsole.print("Необходимо ввести целое положительное число!");
+            return 0;
+        }
+        return userInput;
     }
 }
+

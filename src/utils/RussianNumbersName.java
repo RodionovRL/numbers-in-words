@@ -2,12 +2,28 @@ package utils;
 
 import numbers.ThreeDigitsNumber;
 
-public class Utils {
-    public static String getOne(int number) {
+public class RussianNumbersName implements TextNumbersName {
+    @Override
+    public String getOne(int number) {
         return switch (number) {
             case 0 -> "";
             case 1 -> "один ";
             case 2 -> "два ";
+            default -> getThreeToNine(number);
+        };
+    }
+    @Override
+    public String getWomenOne(int number) {
+        return switch (number) {
+            case 0 -> "";
+            case 1 -> "одна ";
+            case 2 -> "две ";
+            default -> getThreeToNine(number);
+        };
+    }
+
+    private String getThreeToNine(int number) {
+        return switch (number) {
             case 3 -> "три ";
             case 4 -> "четыре ";
             case 5 -> "пять ";
@@ -19,7 +35,8 @@ public class Utils {
         };
     }
 
-    public static String getElevenNineteen(int number) {
+    @Override
+    public String getElevenNineteen(int number) {
         return switch (number) {
             case 1 -> "одиннадцать ";
             case 2 -> "двенадцать ";
@@ -35,7 +52,8 @@ public class Utils {
     }
 
 
-    public static String getTen(int number) {
+    @Override
+    public String getTen(int number) {
         return switch (number) {
             case 0 -> "";
             case 1 -> "десять ";
@@ -51,7 +69,8 @@ public class Utils {
         };
     }
 
-    public static String getHundred(int number) {
+    @Override
+    public String getHundred(int number) {
         return switch (number) {
             case 0 -> "";
             case 1 -> "сто ";
@@ -67,43 +86,44 @@ public class Utils {
         };
     }
 
-    public static String addThousand(String resultInWords) {
+    private String addThousand(String resultInWords) {
         return resultInWords + "тысяча";
     }
 
-    public static String addThousands(String resultInWords) {
+    private String addThousands(String resultInWords) {
         return resultInWords + "тысяч";
     }
 
-    public static String addThousands2(String resultInWords) {
+    private String addThousands2(String resultInWords) {
         return resultInWords + "тысячи";
     }
 
-    public static String addMillion(String resultInWords) {
+    private String addMillion(String resultInWords) {
         return resultInWords + "миллион";
     }
 
-    public static String addMillions(String resultInWords) {
+    private String addMillions(String resultInWords) {
         return resultInWords + "миллионов";
     }
 
-    public static String addMillions2(String resultInWords) {
+    private String addMillions2(String resultInWords) {
         return resultInWords + " миллиона";
     }
 
-    public static String addBillion(String resultInWords) {
+    private String addBillion(String resultInWords) {
         return resultInWords + "миллиард";
     }
 
-    public static String addBillions(String resultInWords) {
+    private String addBillions(String resultInWords) {
         return resultInWords + "миллиардов";
     }
 
-    public static String addBillions2(String resultInWords) {
+    private String addBillions2(String resultInWords) {
         return resultInWords + "миллиарда";
     }
 
-    public static String rightCategoryName(Categories category, ThreeDigitsNumber threeDigitsNumber) {
+    @Override
+    public String rightCategoryName(Categories category, ThreeDigitsNumber threeDigitsNumber) {
         String rightCategoryName = "";
         switch (threeDigitsNumber.getDigitOne().getValue()) {
             case 1 -> {
@@ -147,11 +167,13 @@ public class Utils {
         return rightCategoryName;
     }
 
-    public static String addCurrencyName(String resultInWords, ThreeDigitsNumber threeDigitsNumber) {
+    @Override
+    public String addCurrencyName(String resultInWords, ThreeDigitsNumber threeDigitsNumber) {
         return resultInWords + rightCurrencyName(threeDigitsNumber);
     }
 
-    public static String rightCurrencyName(ThreeDigitsNumber threeDigitsNumber) {
+    @Override
+    public String rightCurrencyName(ThreeDigitsNumber threeDigitsNumber) {
         return switch (threeDigitsNumber.getDigitOne().getValue()) {
             case 1:
                 if (threeDigitsNumber.getDigitTen().getValue() != 1) {
