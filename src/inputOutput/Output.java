@@ -1,5 +1,7 @@
 package inputOutput;
 
+import api.services.OutConsole;
+
 import java.io.PrintStream;
 
 public class Output implements OutConsole {

@@ -1,3 +1,5 @@
+import services.ApplicationRunner;
+
 public class Main {
     private static final ApplicationRunner applicationRunner = new ApplicationRunner();
 

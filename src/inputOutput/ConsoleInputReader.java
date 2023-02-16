@@ -1,5 +1,7 @@
 package inputOutput;
 
+import api.services.InputReader;
+
 import java.util.Scanner;
 
 public class ConsoleInputReader implements InputReader {
@@ -10,12 +12,13 @@ public class ConsoleInputReader implements InputReader {
     }
 
 
-    public int scanUserInput() {
+    @Override
+    public int scanUserInput(String errorMessage) {
         int inputUserAnswer;
         if (scanner.hasNextInt()) {
             inputUserAnswer = scanner.nextInt();
         } else {
-            System.out.print("Вы ввели что-то непотребное: ");
+            System.out.print(errorMessage + " :");
             System.out.println(scanner.nextLine());
             return 0;
         }

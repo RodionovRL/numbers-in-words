@@ -1,8 +1,25 @@
-package utils;
+package languagepack;
 
+import api.services.LanguagePack;
 import numbers.ThreeDigitsNumber;
+import utils.Categories;
 
-public class RussianNumbersName implements TextNumbersName {
+public class RussianLanguagePack implements LanguagePack {
+
+    @Override
+    public String askUserInput() {
+        return "Введите сумму от 1 до 2 147 483 647 (без пробелов)";
+    }
+
+    @Override
+    public String getInputErrorMessage() {
+        return "Вы ввели что-то непотребное";
+    }
+    @Override
+    public  String getLessOneMessage(){
+        return "Необходимо ввести целое положительное число!";
+    }
+
     @Override
     public String getOne(int number) {
         return switch (number) {
@@ -12,6 +29,7 @@ public class RussianNumbersName implements TextNumbersName {
             default -> getThreeToNine(number);
         };
     }
+
     @Override
     public String getWomenOne(int number) {
         return switch (number) {

@@ -1,12 +1,17 @@
+package services;
+
+import api.services.ConvertManager;
+import api.services.Converter;
+import api.services.Parser;
 import numbers.FullNumber;
-import utils.TextNumbersName;
+import api.services.LanguagePack;
 
 public class ConvertManagerImpl implements ConvertManager {
     Converter converter;
     Parser parser;
-    TextNumbersName numbersName;
+    LanguagePack numbersName;
 
-    public ConvertManagerImpl(Parser parser, Converter converter, TextNumbersName numbersName) {
+    public ConvertManagerImpl(Parser parser, Converter converter, LanguagePack numbersName) {
         this.converter = converter;
         this.parser = parser;
         this.numbersName = numbersName;

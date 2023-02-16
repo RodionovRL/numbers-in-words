@@ -1,12 +1,15 @@
+package services;
+
+import api.services.Converter;
 import numbers.FullNumber;
 import numbers.ThreeDigitsNumber;
 import utils.Categories;
-import utils.TextNumbersName;
+import api.services.LanguagePack;
 
 public class ConverterImpl implements Converter {
-    TextNumbersName numbersName;
+    LanguagePack numbersName;
 
-    public ConverterImpl(TextNumbersName numbersName) {
+    public ConverterImpl(LanguagePack numbersName) {
         this.numbersName = numbersName;
     }
 

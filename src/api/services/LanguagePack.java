@@ -1,8 +1,15 @@
-package utils;
+package api.services;
 
 import numbers.ThreeDigitsNumber;
+import utils.Categories;
 
-public interface TextNumbersName {
+public interface LanguagePack {
+    String askUserInput();
+
+    String getInputErrorMessage();
+
+    String getLessOneMessage();
+
     String getOne(int number);
 
     String getWomenOne(int number);
